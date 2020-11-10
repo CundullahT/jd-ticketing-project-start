@@ -234,73 +234,40 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label for="project" class="col-form-label">Project</label>
-                                        <select name="roleid" id="project" class="custom-select" required="required">
+                                        <select name="project" id="project" class="custom-select" required="required">
                                             <option value="none" selected="selected">Select</option>
-                                            <option value="admin">Admin</option>
-                                            <option value="manager">Manager</option>
-                                            <option value="employee">Employee</option>
+                                            <option value="project">PR001-Human Resource CRM</option>
+                                            <option value="project">PR002-Infra Upgrade</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <label for="lastName" class="col-form-label">Last Name</label>
-                                        <input id="lastName" type="text" placeholder="last name" class="form-control">
-                                    </div>
-                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="email" class="col-form-label">Email Address</label>
-                                        <input id="email" type="email" placeholder="email address" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <label for="phone_number" class="col-form-label">Phone Number</label>
-                                        <input id="phone_number" type="text" placeholder="phone number" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <label for="password" class="col-form-label">Password</label>
-                                        <input id="password" type="password" placeholder="password" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <label for="repassword" class="col-form-label">Password Confirmation</label>
-                                        <input id="repassword" type="password" placeholder="confirm your password" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <label>Gender</label>
-                                        <br>
-                                        <label class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" name="radio-inline" class="custom-control-input"><span
-                                                class="custom-control-label">Male</span>
-                                        </label>
-                                        <label class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" name="radio-inline" class="custom-control-input"><span
-                                                class="custom-control-label">Female</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6">
-                                    <div class="form-group">
-                                        <label for="roleid">Choose a Role</label>
-                                        <select name="roleid" id="roleid" class="custom-select" required="required">
+                                        <label for="assignedEmployee" class="col-form-label">Assigned Employee</label>
+                                        <select name="assignedEmployee" id="assignedEmployee" class="custom-select" required="required">
                                             <option value="none" selected="selected">Select</option>
-                                            <option value="admin">Admin</option>
-                                            <option value="manager">Manager</option>
-                                            <option value="employee">Employee</option>
+                                            <option value="employee">Craig Jark</option>
+                                            <option value="employee">Shaun Hayns</option>
                                         </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label for="taskSubject" class="col-form-label">Task Subject</label>
+                                        <input id="taskSubject" type="text" placeholder="task subject" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                        <label for="detail">Detail</label>
+                                        <textarea class="form-control" id="detail" rows="3" placeholder="task details..."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -317,28 +284,28 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="page-header" id="bottom">
-                                    <h2 class="pageheader-title">User List</h2>
+                                    <h2 class="pageheader-title">Task List</h2>
                                 </div>
                             </div>
                         </div>
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email(Username)</th>
-                                <th scope="col">Gender</th>
-                                <th scope="col">Phone</th>
-                                <th scope="col">Role</th>
+                                <th scope="col">Project</th>
+                                <th scope="col">Task Subject</th>
+                                <th scope="col">Assigned Employee</th>
+                                <th scope="col">Assigned Date</th>
+                                <th scope="col">Status</th>
                                 <th scope="col">Action</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>Ozzy</td>
-                                <td>ozzy@cybertekschool.com</td>
-                                <td>Male</td>
-                                <td>2022023333</td>
-                                <td>Employee</td>
+                                <td>PR001-Human Resource CRM</td>
+                                <td>Database Connection</td>
+                                <td>John Kesy</td>
+                                <td>11/01/2020 18:12</td>
+                                <td>In Progress</td>
                                 <td>
                                     <a href="#">
                                         <button type="button" class="btn btn-warning btn-sm">Update</button>
@@ -349,11 +316,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Ozzy</td>
-                                <td>ozzy@cybertekschool.com</td>
-                                <td>Male</td>
-                                <td>2022023333</td>
-                                <td>Employee</td>
+                                <td>PR002-Infra Upgrade</td>
+                                <td>Server LAN Settings</td>
+                                <td>Delisa Norre</td>
+                                <td>11/02/2020 18:12</td>
+                                <td>UAT Testing</td>
                                 <td>
                                     <a href="#">
                                         <button type="button" class="btn btn-warning btn-sm">Update</button>
@@ -364,11 +331,41 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Ozzy</td>
-                                <td>ozzy@cybertekschool.com</td>
-                                <td>Male</td>
-                                <td>2022023333</td>
-                                <td>Employee</td>
+                                <td>PRJ001-Human Resource CRM</td>
+                                <td>REST Codes Development</td>
+                                <td>John Kesy</td>
+                                <td>10/18/2020 18:12</td>
+                                <td>Completed</td>
+                                <td>
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                        </i></a>
+                                    <a href="#" class="delete-row">
+                                        <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PRJ001-Human Resource CRM</td>
+                                <td>General Analysis</td>
+                                <td>John Kesy</td>
+                                <td>10/28/2020 18:12</td>
+                                <td>Open</td>
+                                <td>
+                                    <a href="#">
+                                        <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                        </i></a>
+                                    <a href="#" class="delete-row">
+                                        <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PRJ001-Human Resource CRM</td>
+                                <td>Environment Setup</td>
+                                <td>John Kesy</td>
+                                <td>10/11/2020 18:12</td>
+                                <td>Completed</td>
                                 <td>
                                     <a href="#">
                                         <button type="button" class="btn btn-warning btn-sm">Update</button>
